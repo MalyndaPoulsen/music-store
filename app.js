@@ -5,6 +5,7 @@ function getMusic(){
 }
 function reset(){
     var songListElem= '';
+    document.getElementById('reset-button')
 }
 var songListElem = document.getElementById('songList');
 
@@ -46,3 +47,4 @@ songListElem.innerHTML +=
 '</li>'
 }
 }
+document.getElementById('reset-button')
