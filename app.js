@@ -25,13 +25,24 @@ for(var i =0; i < songList.length; i++){
 
 
 
+
+// songListElem.innerHTML += 
+// '<li class="list-group-item">'+
+// '<h4>'+ currentSong.title  + '</h4>'+
+// '<p>'+ currentSong.collection + '</p>' +
+// '<p> $' + currentSong.price + '</p>' +
+// '<p><img src="' + currentSong.albumArt + '"></p>'+
+// '<p><audio src="' +currentSong.preview +  '"controls><audio></p>'+ 
+// '</li>'
+// }
+// }
+
 songListElem.innerHTML += 
-'<li class="list-group-item>'+
+'<li class="list-group-item">'+
 '<h4>'+ currentSong.title  + '</h4>'+
-'<p><img src="' + currentSong.albumArt + '"></p>'+
-'<p><audio src="' +currentSong.preview +  '"controls><audio></p>'+ 
-'<p>'+ currentSong.collection + '</p>' +
+'<p>'+ currentSong.collection +
 '<p> $' + currentSong.price + '</p>' +
+'<p><img src="' + currentSong.albumArt + '"><audio src="' +currentSong.preview +  '"controls><audio></p>'+ 
 '</li>'
 }
 }
