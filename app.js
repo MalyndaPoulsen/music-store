@@ -15,11 +15,12 @@ for(var i =0; i < songList.length; i++){
   var currentSong = songList[i];
 
 songs += 
-'<li class="list-group-item">'+
-'<h4>'+ currentSong.title  + '</h4>'+
-'<p>'+ currentSong.collection +
-'<p> $' + currentSong.price + '</p>' +
-'<p><img src="' + currentSong.albumArt + '"><audio src="' +currentSong.preview +  '"controls><audio></p>'+ 
+'<li class="list-group-item">'+'<div class="row">'+
+'<div class="col-xs-6"><img src="' + currentSong.albumArt + '"><br>'+
+'<audio src="' +currentSong.preview +  '"controls><audio></div>'+
+'<div class="col-xs-6"><h4>'+ currentSong.title  + '</h4>'+
+'<p>'+ currentSong.collection +'</p>'+
+'<p> $' + currentSong.price + '</p></div>' 
 '</li>'
 }
 songListElem.innerHTML= songs
